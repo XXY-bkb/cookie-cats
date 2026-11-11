@@ -1,0 +1,204 @@
+{
+  "health": {
+    "shape": [
+      90189,
+      5
+    ],
+    "missing": 0,
+    "duplicates": 0,
+    "counts": {
+      "gate_40": 45489,
+      "gate_30": 44700
+    },
+    "rounds_max": 49854,
+    "rounds_median": 16.0,
+    "rounds_mean": 51.8724567297564,
+    "srm": {
+      "chi2": 6.9024049496058275,
+      "p_value": 0.008607987810836262,
+      "passed": false,
+      "max_relative_gap": 0.008748295246648705
+    }
+  },
+  "primary": {
+    "control_rate": 0.19020134228187918,
+    "treatment_rate": 0.18200004396667327,
+    "diff_pp": 0.8201298315205913,
+    "rel_lift": 0.04506206776910276,
+    "ci_low_pp": 0.3121044211526281,
+    "ci_high_pp": 1.3281552418885545,
+    "z": 3.164358912748191,
+    "p_value": 0.001554249975614329,
+    "significant": true,
+    "newcombe_ci_pp": [
+      0.31213026887613,
+      1.3281940871914826
+    ],
+    "wilson_control": [
+      0.18658979684366292,
+      0.19386613051747012
+    ],
+    "wilson_treatment": [
+      0.17848120097823006,
+      0.18557259139286592
+    ]
+  },
+  "secondary": {
+    "retention_1": {
+      "control_rate": 0.4481879194630872,
+      "treatment_rate": 0.44228274967574577,
+      "diff_pp": 0.5905169787341458,
+      "ci_pp": [
+        -0.058209987476230164,
+        1.2392439449445216
+      ],
+      "p_value": 0.07440965529691913
+    },
+    "rounds_median_diff": {
+      "observed": 1.0,
+      "ci": [
+        0.0,
+        1.0
+      ]
+    },
+    "rounds_mean_ttest_p": 0.37592438409326223,
+    "quantiles": {
+      "0.5": {
+        "control": 17.0,
+        "treatment": 16.0
+      },
+      "0.9": {
+        "control": 135.0,
+        "treatment": 134.0
+      },
+      "0.99": {
+        "control": 493.0,
+        "treatment": 492.1200000000026
+      },
+      "0.999": {
+        "control": 1052.612000000081,
+        "treatment": 1086.0960000000196
+      }
+    },
+    "outlier_sensitivity": {
+      "raw": {
+        "label": "原始",
+        "control_median": 17.0,
+        "treatment_median": 16.0,
+        "n_control": 44700,
+        "n_treatment": 45489
+      },
+      "drop_top1": {
+        "label": "去掉最大 1 人",
+        "control_median": 17.0,
+        "treatment_median": 16.0,
+        "n_control": 44699,
+        "n_treatment": 45488
+      },
+      "drop_top_0.1pct": {
+        "label": "去掉最大 0.1%",
+        "control_median": 17.0,
+        "treatment_median": 16.0,
+        "n_control": 44610,
+        "n_treatment": 45399
+      }
+    }
+  },
+  "stratified": {
+    "table": [
+      {
+        "bin": "0",
+        "n_control": 1937,
+        "n_treatment": 2057,
+        "control_rate": 0.00826,
+        "treatment_rate": 0.00632,
+        "control_lo": 0.005091,
+        "control_hi": 0.013376,
+        "treatment_lo": 0.003697,
+        "treatment_hi": 0.010783,
+        "diff_pp": 0.194031
+      },
+      {
+        "bin": "1-5",
+        "n_control": 10119,
+        "n_treatment": 10604,
+        "control_rate": 0.012946,
+        "treatment_rate": 0.014429,
+        "control_lo": 0.010921,
+        "control_hi": 0.015341,
+        "treatment_lo": 0.012328,
+        "treatment_hi": 0.01688,
+        "diff_pp": -0.148257
+      },
+      {
+        "bin": "6-20",
+        "n_control": 12428,
+        "n_treatment": 12657,
+        "control_rate": 0.05029,
+        "treatment_rate": 0.047484,
+        "control_lo": 0.046584,
+        "control_hi": 0.054273,
+        "treatment_lo": 0.043914,
+        "treatment_hi": 0.051328,
+        "diff_pp": 0.280606
+      },
+      {
+        "bin": "21-100",
+        "n_control": 14121,
+        "n_treatment": 13881,
+        "control_rate": 0.239289,
+        "treatment_rate": 0.218356,
+        "control_lo": 0.232324,
+        "control_hi": 0.246396,
+        "treatment_lo": 0.211562,
+        "treatment_hi": 0.225306,
+        "diff_pp": 2.093298
+      },
+      {
+        "bin": "100+",
+        "n_control": 6095,
+        "n_treatment": 6290,
+        "control_rate": 0.713864,
+        "treatment_rate": 0.712401,
+        "control_lo": 0.702386,
+        "control_hi": 0.725073,
+        "treatment_lo": 0.701088,
+        "treatment_hi": 0.723454,
+        "diff_pp": 0.146319
+      }
+    ],
+    "standardized": {
+      "control": 0.19020134228187918,
+      "treatment": 0.18286034361359288,
+      "diff_pp": 0.7340998668286303
+    },
+    "interaction_p": 0.09230139653053458
+  },
+  "power": {
+    "n_per_group": 44700,
+    "base_rate": 0.18200004396667327,
+    "observed_delta_pp": 0.8201298315205913,
+    "achieved_power": 0.8830912109776261,
+    "mde_pp": 0.7286055819450626,
+    "required_n": {
+      "0.5pp": 94471,
+      "1.0pp": 23862,
+      "2.0pp": 6084
+    }
+  },
+  "multiplicity": {
+    "names": [
+      "retention_7",
+      "retention_1"
+    ],
+    "p_values": [
+      0.001554249975614329,
+      0.07440965529691913
+    ],
+    "alpha_adjusted": 0.025,
+    "reject": [
+      true,
+      false
+    ]
+  }
+}
