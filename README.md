@@ -159,7 +159,7 @@ p=0.0086（卡方 6.90），技术上未通过，但两组只差 0.87%。处理�
 ## 8. 复现方式
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/XXY-bkb/cookie-cats.git
 cd cookie-cats
 pip install -r requirements.txt
 
