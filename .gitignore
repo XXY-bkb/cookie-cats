@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pylibs/
+.venv/
+venv/
+
+# 本项目的临时目录（下载缓存、脚本草稿）
+.tmp/
+
+# 数据中间产物（原始数据保留）
+data/processed/
+
+# 报告中间产物（最终 one_pager 要提交）
+reports/figures/*.pdf
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

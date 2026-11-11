@@ -1,0 +1,10 @@
+# 核心依赖（跑 python -m src.analysis 只需要这些）
+pandas==2.2.3
+numpy==2.1.2
+scipy==1.16.2
+matplotlib==3.9.2
+statsmodels==0.15.0
+
+# 想重新运行 notebooks/ 的话再装（二选一）
+# jupyterlab==4.3.4
+# notebook==7.3.2
